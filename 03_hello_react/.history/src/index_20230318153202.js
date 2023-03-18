@@ -1,0 +1,1 @@
+ReactDOM.render(<h2></h2>)
