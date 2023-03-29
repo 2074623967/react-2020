@@ -1,0 +1,14 @@
+import React, { memo } from 'react';
+import { NavLink } from 'react-router-dom';
+
+const HYAppHeader = memo(function HYAppHeader() {
+  return (
+    <div>
+      <NavLink to={'/'}>发现音乐</NavLink>
+      <NavLink to={'/mine'}>我的</NavLink>
+      <NavLink to={'/friend'}></NavLink>
+    </div>
+  );
+});
+
+export default HYAppHeader;
