@@ -38,9 +38,7 @@ const HYAppHeader = memo(function HYAppHeader() {
             })}
           </div>
         </HeaderLeft>
-        <HeaderRight> <Input className="search" placeholder="音乐/视频/电台/用户" prefix={<SearchOutlined />}/>
-          <div className="center">创作者中心</div>
-          <div>登录</div></HeaderRight>
+        <HeaderRight>Right</HeaderRight>
       </div>
       <div className="divider"></div>
     </HeaderWrapper>
