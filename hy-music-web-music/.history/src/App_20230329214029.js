@@ -13,7 +13,7 @@ import HYAppFooter from '@/components/app-footer';
 export default memo(() => {
   return (
     <div>
-      <Provider store={store}>
+      <Provider>
         <HashRouter>
           <HYAppHeader />
           {renderRoutes(routes)}

@@ -5,16 +5,17 @@ import { NavLink } from 'react-router-dom';
 
 import { dicoverMenu } from '@/common/local-data';
 import request from '@/services/request';
+
 import { DiscoverWrapper, TopMenu } from './style';
 
 export default memo(function HYDiscover(props) {
-  useEffect(() => {
+  useEffect(()=>{
     request({
-      url: '/banner',
-    }).then(res => {
-      console.log(res);
-    });
-  }, []);
+     url:'/banner',
+    }).then(res=>{
+    
+    })
+  },[])
   const { route } = props;
   return (
     <DiscoverWrapper>

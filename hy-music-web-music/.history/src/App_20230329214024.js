@@ -10,16 +10,18 @@ import store from '@/store';
 import HYAppHeader from '@/components/app-header';
 import HYAppFooter from '@/components/app-footer';
 
+
 export default memo(() => {
   return (
     <div>
-      <Provider store={store}>
-        <HashRouter>
-          <HYAppHeader />
-          {renderRoutes(routes)}
-          <HYAppFooter />
-        </HashRouter>
+      <Provider>
+
       </Provider>
+      <HashRouter>
+        <HYAppHeader />
+        {renderRoutes(routes)}
+        <HYAppFooter />
+      </HashRouter>
     </div>
   );
 });
