@@ -5,9 +5,9 @@ import * as actionTypes from './constants';
 // const defaultState = Map({
 //   topBanners: [],
 // });
-const defaultState = {
-  topBanners: [],
-};
+// const defaultState ={
+//   topBanners: [],
+// };
 
 function reducer(state = defaultState, action) {
   switch (action.type) {

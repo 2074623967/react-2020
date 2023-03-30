@@ -1,5 +1,6 @@
 import React, { memo, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 // import { connect } from 'react-redux';
 
 import { getTopBannerAction } from './store/actionCreators';
@@ -9,20 +10,14 @@ function HYRecommend(props) {
   const { topBanners } = useSelector(state => ({
     topBanners: state.recommend.topBanners,
   }));
-  console.log(
-    useSelector(state => ({
-      topBanners: state.recommend.topBanners,
-    }))
-  );
-
   const dispatch = useDispatch();
-
+ console.log()
   //发送网络请求
   useEffect(() => {
     dispatch(getTopBannerAction());
   }, [dispatch]);
 
-  return <div>{}</div>;
+  return <div>{topBanners.length}</div>;
 }
 
 export default memo(HYRecommend);

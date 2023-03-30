@@ -9,14 +9,12 @@ function HYRecommend(props) {
   const { topBanners } = useSelector(state => ({
     topBanners: state.recommend.topBanners,
   }));
+  const dispatch = useDispatch();
   console.log(
     useSelector(state => ({
       topBanners: state.recommend.topBanners,
     }))
   );
-
-  const dispatch = useDispatch();
-
   //发送网络请求
   useEffect(() => {
     dispatch(getTopBannerAction());
